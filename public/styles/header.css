@@ -47,6 +47,7 @@ aside {
 
 .over {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-family: source sans pro, sans-serif;
 }
@@ -59,4 +60,9 @@ aside {
 .new-tweet {
   background-color: #f3f1ed;
   padding-top: 15px;
+}
+
+#tweet-text {
+  background: transparent;
+  border: transparent;
 }
