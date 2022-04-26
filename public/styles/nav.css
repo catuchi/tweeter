@@ -1,0 +1,39 @@
+body {
+  font-family: source sans pro, sans-serif;
+}
+
+nav {
+  font-family: bungee, sans-serif;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 1.5em;
+  padding-top: 2em;
+  font-size: xx-large;
+}
+
+.newTweet {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5em;
+  justify-content: center;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  color: #f13a19;
+}
+
+.write {
+  display: flex;
+  align-items: flex-end;
+  height: 60px;
+  font-family: source sans pro, sans-serif;
+}
