@@ -1,6 +1,8 @@
 #tweet-text {
   background: transparent;
   border: transparent;
+  resize: none;
+  outline: none;
 }
 
 .tweet-header {
@@ -18,38 +20,16 @@
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-  position: relative;
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  /* bottom: 8px; */
-  background-color: grey;
-  z-index: -1;
+.single-tweet:hover {
+  box-shadow: 10px 5px 5px grey;
+  transition: 100ms ease-in-out;
 }
-/* .single-tweet::before {
-  content: '';
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -10;
-  border: 4px solid grey;
-  transition: top, left, right, bottom, 100ms, ease-in-out;
-} */
 
-/* .single-tweet:hover::before,
-.single-tweet:focus::before {
-  top: 8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-} */
+.interact i:hover {
+  color: gold;
+}
 
 .tweet-footer {
   display: flex;
@@ -87,16 +67,10 @@ i {
 }
 
 .tweet-content {
-  /* display: flex; */
   border-bottom: 4px solid black;
-  /* flex-grow: 4; */
 }
 
 p {
   text-align: center;
   text-justify: inter-word;
 }
-
-/* *, *::before, *::after {
-  box-sizing: border-box;
-} */

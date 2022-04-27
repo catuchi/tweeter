@@ -11,9 +11,9 @@ section {
   flex-direction: column;
 }
 
-/* aside {
+aside {
   margin-top: 5em;
-} */
+}
 
 .button-count {
   display: flex;

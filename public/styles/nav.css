@@ -12,6 +12,12 @@ nav {
   justify-content: space-between;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .logo {
   padding-left: 1.5em;
   padding-top: 2em;
@@ -29,6 +35,10 @@ nav {
   display: flex;
   justify-content: center;
   color: #f13a19;
+}
+
+.down i {
+  color: red;
 }
 
 .write {
