@@ -54,29 +54,33 @@ const data = [
 
 $(document).ready(function () {
 
-  $('#submit-tweet').submit(function(event) {
-    // alert("Handler for .submit() called.");
-    event.preventDefault();
-  });
+  // $('#submit-tweet').submit(function(event) {
+  //   // alert("Handler for .submit() called.");
+  //   event.preventDefault();
+  // });
 
   $('#submit-tweet').on('submit', function(event) {
     event.preventDefault();
     const formData = $(this).serialize();
 
-    $.ajax({
-      type: "POST",
-      url: "/tweets",
-      data: formData,
-    }).then((data) => console.log(data));
+    const tweet = $('#tweet-text').val();
+    if (tweet === '' || tweet === null) {
+      alert('Tweet was empty');
+    } else if (tweet.length > 140){
+      alert('Too many characters');
+    } else {
+      $.ajax({
+        type: "POST",
+        url: "/tweets",
+        data: formData,
+      }).then(() =>  loadTweets());
+    }
+
 
   });
 
 
   const createTweetElement = function (tweet) {
-    // let timeDifference = new Date() - new Date(tweet.created_at);
-    // timeDifference = timeDifference / 86400000;
-    // timeDifference = Math.round(Math.abs(timeDifference));
-    // console.log(timeDifference)
     const time = timeago.format(tweet.created_at);
 
     let $tweet = $(`
@@ -108,16 +112,17 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     for (let tweet of tweets) {
       let $tweet = createTweetElement(tweet);
-      $('.tweet-container').append($tweet);
+      $('.tweet-container').prepend($tweet);
     }
   };
 
   // renderTweets(data);
 
   const loadTweets = function() {
+    $('.tweet-container').empty();
     $.ajax("/tweets")
       .then((res) => renderTweets(res))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
 
   }
 
