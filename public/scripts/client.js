@@ -64,6 +64,7 @@ $(document).ready(function () {
     const formData = $(this).serialize();
 
     const tweet = $('#tweet-text').val();
+
     if (tweet === '' || tweet === null) {
       alert('Tweet was empty');
     } else if (tweet.length > 140){
@@ -83,6 +84,12 @@ $(document).ready(function () {
   const createTweetElement = function (tweet) {
     const time = timeago.format(tweet.created_at);
 
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
+
     let $tweet = $(`
       <article class="single-tweet">
               <header class="tweet-header">
@@ -93,7 +100,7 @@ $(document).ready(function () {
                 <span class="handle">${tweet.user.handle}</span>
               </header>
               <section class="tweet-content">
-                <p>${tweet.content.text}</p>
+                <p>${escape(tweet.content.text)}</p>
               </section>
               <footer class="tweet-footer">
                 <span class="days" style="font-size: 0.8em;">${time}</span>
