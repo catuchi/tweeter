@@ -66,9 +66,13 @@ $(document).ready(function () {
     const tweet = $('#tweet-text').val();
 
     if (tweet === '' || tweet === null) {
-      alert('Tweet was empty');
+      $('.error-message').css({'display': 'block', 'border-color': 'red', 'border-style': 'solid'})
+      $('.error-message').text(' ❗ Please enter valid tweet ❗')
+      // alert('Tweet was empty');
     } else if (tweet.length > 140){
-      alert('Too many characters');
+      $('.error-message').css({'display': 'block', 'border-color': 'red', 'border-style': 'solid'})
+      $('.error-message').text(' ❗ Error: Character limit exceeded ❗')
+      // alert('Too many characters');
     } else {
       $.ajax({
         type: "POST",
