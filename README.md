@@ -29,6 +29,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of desktop mode"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/%3Aurls%20with%20pages.png)
-!["Screenshot of tablet mode"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/%3Aurls.png)
-!["Screenshot of tweets"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/create%20short%20url.png)
+!["Screenshot of desktop mode"](https://github.com/catuchi/tweeter/blob/master/docs/desktop%20mode.png?raw=true)
+!["Screenshot of tablet mode"](https://github.com/catuchi/tweeter/blob/master/docs/tablet%20mode.png?raw=true)
+!["Screenshot of tweets"](https://github.com/catuchi/tweeter/blob/master/docs/tweets.png?raw=true)
