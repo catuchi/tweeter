@@ -1,0 +1,31 @@
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-header {
+    width: 30%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d79b28;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    color: #FFFFFF;
+    margin-top: 240px;
+    padding-top: 1.3em;
+    margin-left: 1.5em;
+  }
+
+  .avi {
+    block-size: auto;
+  }
+
+  body main {
+    width: 60%;
+    float: right;
+    margin-top: 240px;
+    margin-right: 1.5em;
+  }
+}

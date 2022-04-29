@@ -16,3 +16,19 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Express
+- Md5
+- Timeago
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `node express_server.js` command.
+
+## Final Product
+
+!["Screenshot of desktop mode"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/%3Aurls%20with%20pages.png)
+!["Screenshot of tablet mode"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/%3Aurls.png)
+!["Screenshot of tweets"](https://raw.githubusercontent.com/catuchi/tinyapp/83c12a47178650638eb56713b7b97a942a2b1b6e/docs/create%20short%20url.png)
